@@ -1,0 +1,20 @@
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.owasp</groupId>
+            <artifactId>dependency-check-maven</artifactId>
+            <version>10.0.3</version>
+            <configuration>
+                <failBuildOnCVSS>8</failBuildOnCVSS>
+                <nvdApiKey>API-KEY-DISINI </nvdApiKey>
+            </configuration>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>check</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
